@@ -1,5 +1,5 @@
 const String geminiApiKey =
-    'YOUR_GEMINI_API'; // Replace with your actual Gemini API Key
+    'AIzaSyDDoBhQGDtEuuev1dkCkknIRN6jFY4Os6Q'; // Replace with your actual Gemini API Key
 
 void checkApiKey() {
   if (geminiApiKey == 'YOUR_API_KEY') {

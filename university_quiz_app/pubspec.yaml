@@ -30,9 +30,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  file_picker: ^6.2.1
-  google_generative_ai: ^0.2.2
-  syncfusion_flutter_pdf: ^24.2.8 # Check pub.dev for the LATEST version
+  file_picker: ^10.1.9
+  google_generative_ai: ^0.4.7
+  syncfusion_flutter_pdf: ^29.2.5 # Check pub.dev for the LATEST version
   provider: ^6.1.1
 
   # The following adds the Cupertino Icons font to your application.

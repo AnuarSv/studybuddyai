@@ -1,4 +1,3 @@
-// lib/utils/app_theme.dart
 import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -29,10 +28,12 @@ class AppTheme {
         color: Colors.white,
       ),
     ),
-    cardTheme: CardTheme(
+    cardTheme: const CardThemeData(
       elevation: 3,
-      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      margin: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(12)),
+      ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
@@ -70,18 +71,30 @@ class AppTheme {
         fontSize: 16,
         fontWeight: FontWeight.w500,
         color: Colors.white,
-      ), // For button text
+      ),
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       backgroundColor: Colors.teal[400],
       foregroundColor: Colors.white,
     ),
-    dialogTheme: DialogTheme(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+    dialogTheme: const DialogThemeData(
       backgroundColor: Colors.white,
+      elevation: 6,
+      surfaceTintColor: Colors.white,
+      titleTextStyle: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        color: Colors.blueGrey,
+      ),
+      contentTextStyle: TextStyle(
+        fontSize: 16,
+        color: Colors.grey,
+      ),
+      actionsPadding: EdgeInsets.all(8),
+      insetPadding: EdgeInsets.symmetric(horizontal: 40, vertical: 24),
     ),
-    progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.teal[400]),
+    progressIndicatorTheme: ProgressIndicatorThemeData(
+      color: Colors.teal[400],
+    ),
   );
-
-  // You can define a darkTheme as well if needed
 }
