@@ -172,11 +172,10 @@ lib/
 
 ---
 
-## 9. Screenshots (Placeholder)
-*(Ideally, you would replace this section with actual screenshots of your application)*
-
+## 9. Screenshots
 -   **Home Screen:** Showing a list of existing training sessions or an empty state.
 -   **Create Training Screen:** Showing PDF selection, training name input, and quantity selectors for questions/flashcards.
+  ![image](https://github.com/user-attachments/assets/f0b72be9-f146-4e9c-825c-9e104b52c83e)
 -   **MCQ Quiz Screen:** An example of a multiple-choice question.
 -   **True/False Quiz Screen:** An example of a true/false question.
 -   **Flashcard View Screen:** A flashcard showing the term and definition.
