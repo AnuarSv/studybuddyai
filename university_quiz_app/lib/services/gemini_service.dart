@@ -7,14 +7,14 @@ class GeminiService {
   final String apiKey;
   late final GenerativeModel _model;
   static const int _maxTextLength =
-      150000; // Gemini 1.5 Flash context window is large, but be mindful of costs/tokens
+      150000;
 
   GeminiService(this.apiKey) {
     _model = GenerativeModel(
-      model: 'gemini-1.5-flash', // Use the latest flash model
+      model: 'gemini-1.5-flash',
       apiKey: apiKey,
       generationConfig: GenerationConfig(
-        // temperature: 0.7, // Adjust for creativity vs. factualness
+        temperature: 0.7,
       ),
     );
   }
